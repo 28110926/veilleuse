@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veilleuse Projecteur - China Nova | Offre TikTok</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e1b4b 0%, #3730a3 25%, #1e40af 50%, #0891b2 75%, #0891b2 100%);
+        }
+        
+        .gradient-cta {
+            background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 50%, #06b6d4 100%);
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .testimonial-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        .testimonial-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(124, 58, 237, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(124, 58, 237, 0.8); }
+        }
+    </style>
+</head>
+<body class="gradient-bg text-white min-h-screen">
+    <!-- Header -->
+    <header class="px-4 py-4 flex justify-between items-center max-w-6xl mx-auto relative">
+        <div class="flex items-center space-x-3">
+            <div class="relative w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 via-blue-500 to-cyan-400 flex items-center justify-center shadow-xl">
+                <div class="absolute inset-0 rounded-full bg-gradient-to-br from-purple-400 to-cyan-300 opacity-30 blur-sm scale-110"></div>
+                <svg class="w-7 h-7 text-white relative z-10" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    <circle cx="12" cy="12" r="2" fill="white" opacity="0.8"/>
+                </svg>
+                <div class="absolute -top-1 -right-1 w-2 h-2 bg-cyan-300 rounded-full animate-ping"></div>
+                <div class="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-purple-300 rounded-full animate-pulse"></div>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent">China Nova</h1>
+                <p class="text-xs text-cyan-300 font-medium">✨ Veilleuses magiques</p>
+            </div>
+        </div>
+        
+        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-1 rounded-full text-xs font-bold animate-pulse">
+            ⏰ Plus que 47 en stock !
+        </div>
+        
+        <a href="https://paypal.me/chinanova/29.99" target="_blank" rel="nofollow" 
+           class="hidden md:block bg-white text-purple-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-all hover:scale-105 shadow-lg">
+            🛒 Commander maintenant
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-4 py-8 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <!-- Video/Left Side -->
+            <div class="order-2 md:order-1">
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <video autoplay muted loop playsinline poster="assets/veilleuse6.jpg" class="w-full h-auto">
+                        <source src="assets/veilleuse.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </div>
+            </div>
+            
+            <!-- Content/Right Side -->
+            <div class="order-1 md:order-2 text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                    Veilleuse Projecteur<br>
+                    <span class="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                        ciel étoilé & monde sous-marin
+                    </span>
+                </h1>
+
+                <!-- Countdown repositionné -->
+                <div class="mt-4 mb-6 text-center">
+                    <span class="inline-block bg-gradient-to-r from-red-500 to-pink-500 px-5 py-2 rounded-full text-base font-bold animate-pulse">
+                        ⏰ Offre limitée : se termine dans <span id="countdown">23:47:12</span>
+                    </span>
+                </div>
+                
+                <p class="text-lg md:text-xl mb-6 opacity-90 leading-relaxed">
+                    Apaisez le coucher et créez une ambiance magique en 10 secondes. 
+                    Fonctionnement silencieux, USB, LED sûres.
+                </p>
+                
+                <div class="mb-6">
+                    <div class="bg-white/10 p-4 rounded-xl backdrop-blur-sm mb-4">
+                        <div class="flex items-center justify-center md:justify-start space-x-4 mb-2">
+                            <span class="text-4xl md:text-5xl font-bold text-green-400">29,99 €</span>
+                            <div class="text-center">
+                                <span class="text-xl text-gray-400 line-through block">39,99 €</span>
+                                <span class="bg-green-500 text-white px-2 py-1 rounded text-sm font-bold">-25%</span>
+                            </div>
+                        </div>
+                        <p class="text-center md:text-left text-green-300 font-semibold">💰 Vous économisez 10,00 € !</p>
+                    </div>
+                    
+                    <div class="flex items-center justify-center md:justify-start space-x-2 mb-3">
+                        <div class="flex text-yellow-400 text-lg">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="text-sm font-semibold">(4.8/5)</span>
+                        <span class="text-cyan-300">•</span>
+                        <span class="text-sm font-semibold">1 273 avis clients</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-center md:justify-start space-x-4 text-sm">
+                        <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full">✅ En stock</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full">🚚 Expédition 72h</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-3">
+                    <a href="https://paypal.me/chinanova/29.99" target="_blank" rel="nofollow" 
+                       class="block gradient-cta px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition-transform pulse-glow text-center">
+                        🛒 COMMANDER MAINTENANT
+                    </a>
+                    <p class="text-sm text-center opacity-75">
+                        🔒 Paiement sécurisé PayPal • ⚡ Livraison express gratuite
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="px-4 py-8 max-w-6xl mx-auto">
+        <div class="bg-white/5 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
+            <h3 class="text-xl font-bold text-center mb-6 text-cyan-300">🛡️ Vos garanties China Nova</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="text-center p-4 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl border border-green-500/30">
+                    <div class="text-3xl mb-2">🔒</div>
+                    <p class="text-sm font-semibold">Paiement 100% sécurisé</p>
+                    <p class="text-xs opacity-75 mt-1">Protection PayPal</p>
+                </div>
+                <div class="text-center p-4 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl border border-blue-500/30">
+                    <div class="text-3xl mb-2">🚚</div>
+                    <p class="text-sm font-semibold">Livraison express gratuite</p>
+                    <p class="text-xs opacity-75 mt-1">Reçue sous 72h</p>
+                </div>
+                <div class="text-center p-4 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-500/30">
+                    <div class="text-3xl mb-2">↩️</div>
+                    <p class="text-sm font-semibold">Retour 30 jours</p>
+                    <p class="text-xs opacity-75 mt-1">Satisfait ou remboursé</p>
+                </div>
+                <div class="text-center p-4 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-xl border border-orange-500/30">
+                    <div class="text-3xl mb-2">💬</div>
+                    <p class="text-sm font-semibold">Support français 7j/7</p>
+                    <p class="text-xs opacity-75 mt-1">Réponse sous 2h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="px-4 py-8 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+        <img src="assets/veilleuse6.jpg" alt="Projection océan et baleine" class="rounded-xl shadow-lg max-w-[90%]">
+        <img src="assets/veilleuse7.jpg" alt="Ambiance sirène et méduses" class="rounded-xl shadow-lg max-w-[90%]">
+        <img src="assets/veilleuse8.jpg" alt="Veilleuse en trois couleurs" class="rounded-xl shadow-lg max-w-[90%]">
+      </div>
+    </section>
+
+    <!-- ... le reste de ton code reste identique ... -->
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            if (!countdownElement) return;
+            
+            let totalSeconds = 23 * 3600 + 47 * 60 + 12;
+            
+            setInterval(() => {
+                totalSeconds--;
+                if (totalSeconds < 0) totalSeconds = 23 * 3600 + 59 * 60 + 59;
+                
+                const hours = Math.floor(totalSeconds / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+                
+                countdownElement.textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCountdown();
+        });
+    </script>
+</body>
+</html>
