@@ -41,18 +41,12 @@
             scrollbar-width: none;
             -ms-overflow-style: none;
         }
+        .testimonial-scroll::-webkit-scrollbar { display: none; }
         
-        .testimonial-scroll::-webkit-scrollbar {
-            display: none;
-        }
-        
-        .pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
-        
+        .pulse-glow { animation: pulse-glow 2s infinite; }
         @keyframes pulse-glow {
             0%, 100% { box-shadow: 0 0 20px rgba(124, 58, 237, 0.5); }
-            50% { box-shadow: 0 0 30px rgba(124, 58, 237, 0.8); }
+            50%      { box-shadow: 0 0 30px rgba(124, 58, 237, 0.8); }
         }
     </style>
 </head>
@@ -91,8 +85,9 @@
             <!-- Video/Left Side -->
             <div class="order-2 md:order-1">
                 <div class="rounded-xl overflow-hidden shadow-lg">
-                    <video autoplay muted loop playsinline poster="/veilleuse6.jpg" class="w-full h-auto">
-                        <source src="assets/veilleuse.mp4" type="video/mp4">
+                    <!-- ✅ chemins corrigés : PAS de / et PAS de assets/ -->
+                    <video autoplay muted loop playsinline poster="veilleuse6.jpg" class="w-full h-auto">
+                        <source src="veilleuse.mp4" type="video/mp4">
                         Votre navigateur ne supporte pas la vidéo.
                     </video>
                 </div>
@@ -123,106 +118,4 @@
                     <div class="bg-white/10 p-4 rounded-xl backdrop-blur-sm mb-4">
                         <div class="flex items-center justify-center md:justify-start space-x-4 mb-2">
                             <span class="text-4xl md:text-5xl font-bold text-green-400">29,99 €</span>
-                            <div class="text-center">
-                                <span class="text-xl text-gray-400 line-through block">39,99 €</span>
-                                <span class="bg-green-500 text-white px-2 py-1 rounded text-sm font-bold">-25%</span>
-                            </div>
-                        </div>
-                        <p class="text-center md:text-left text-green-300 font-semibold">💰 Vous économisez 10,00 € !</p>
-                    </div>
-                    
-                    <div class="flex items-center justify-center md:justify-start space-x-2 mb-3">
-                        <div class="flex text-yellow-400 text-lg">
-                            <span>★★★★★</span>
-                        </div>
-                        <span class="text-sm font-semibold">(4.8/5)</span>
-                        <span class="text-cyan-300">•</span>
-                        <span class="text-sm font-semibold">1 273 avis clients</span>
-                    </div>
-                    
-                    <div class="flex items-center justify-center md:justify-start space-x-4 text-sm">
-                        <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full">✅ En stock</span>
-                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full">🚚 Expédition 72h</span>
-                    </div>
-                </div>
-                
-                <div class="space-y-3">
-                    <a href="https://paypal.me/chinanova/29.99" target="_blank" rel="nofollow" 
-                       class="block gradient-cta px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition-transform pulse-glow text-center">
-                        🛒 COMMANDER MAINTENANT
-                    </a>
-                    <p class="text-sm text-center opacity-75">
-                        🔒 Paiement sécurisé PayPal • ⚡ Livraison express gratuite
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Badges -->
-    <section class="px-4 py-8 max-w-6xl mx-auto">
-        <div class="bg-white/5 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
-            <h3 class="text-xl font-bold text-center mb-6 text-cyan-300">🛡️ Vos garanties China Nova</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="text-center p-4 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl border border-green-500/30">
-                    <div class="text-3xl mb-2">🔒</div>
-                    <p class="text-sm font-semibold">Paiement 100% sécurisé</p>
-                    <p class="text-xs opacity-75 mt-1">Protection PayPal</p>
-                </div>
-                <div class="text-center p-4 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl border border-blue-500/30">
-                    <div class="text-3xl mb-2">🚚</div>
-                    <p class="text-sm font-semibold">Livraison express gratuite</p>
-                    <p class="text-xs opacity-75 mt-1">Reçue sous 72h</p>
-                </div>
-                <div class="text-center p-4 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-500/30">
-                    <div class="text-3xl mb-2">↩️</div>
-                    <p class="text-sm font-semibold">Retour 30 jours</p>
-                    <p class="text-xs opacity-75 mt-1">Satisfait ou remboursé</p>
-                </div>
-                <div class="text-center p-4 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-xl border border-orange-500/30">
-                    <div class="text-3xl mb-2">💬</div>
-                    <p class="text-sm font-semibold">Support français 7j/7</p>
-                    <p class="text-xs opacity-75 mt-1">Réponse sous 2h</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Gallery -->
-    <section class="px-4 py-8 max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
-        <img src="/veilleuse6.jpg" alt="Projection océan et baleine" class="rounded-xl shadow-lg max-w-[90%]">
-        <img src="/veilleuse7.jpg" alt="Ambiance sirène et méduses" class="rounded-xl shadow-lg max-w-[90%]">
-        <img src="/veilleuse8.jpg" alt="Veilleuse en trois couleurs" class="rounded-xl shadow-lg max-w-[90%]">
-      </div>
-    </section>
-
-    <!-- ... le reste de ton code reste identique ... -->
-
-    <script>
-        // Countdown timer
-        function updateCountdown() {
-            const countdownElement = document.getElementById('countdown');
-            if (!countdownElement) return;
-            
-            let totalSeconds = 23 * 3600 + 47 * 60 + 12;
-            
-            setInterval(() => {
-                totalSeconds--;
-                if (totalSeconds < 0) totalSeconds = 23 * 3600 + 59 * 60 + 59;
-                
-                const hours = Math.floor(totalSeconds / 3600);
-                const minutes = Math.floor((totalSeconds % 3600) / 60);
-                const seconds = totalSeconds % 60;
-                
-                countdownElement.textContent = 
-                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-            }, 1000);
-        }
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            updateCountdown();
-        });
-    </script>
-</body>
-</html>
+                            <div class
